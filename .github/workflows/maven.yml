@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Jmeter Markdown Report
-        path: target/jmeter
+        path: target/jmeter/index.md

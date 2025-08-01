@@ -75,7 +75,7 @@
                 <configuration>
                     <generateReports>true</generateReports>
                     <propertiesJMeter>
-                        <jmeter.reportgenerator.exporter.html.property.template_dir>../../../classes/md-report-template</jmeter.reportgenerator.exporter.html.property.template_dir>
+<!--                         <jmeter.reportgenerator.exporter.html.property.template_dir>../../../classes/md-report-template</jmeter.reportgenerator.exporter.html.property.template_dir> -->
                     </propertiesJMeter>
                     <propertiesUser>
 <!--                        <jmeter.reportgenerator.report_title>SANAGAHSR</jmeter.reportgenerator.report_title>-->

@@ -13,7 +13,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+permissions:
+  contents: read # You might need other permissions, but this is a good practice
+  id-token: write
+  
 jobs:
   build:
 

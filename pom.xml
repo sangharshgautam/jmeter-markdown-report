@@ -80,9 +80,9 @@
                     <propertiesUser>
 <!--                        <jmeter.reportgenerator.report_title>SANAGAHSR</jmeter.reportgenerator.report_title>-->
                     </propertiesUser>
-                    <testPlanLibraries>
+<!--                     <testPlanLibraries>
                         <artifact>org.example:jmeter-oas:1.0-SNAPSHOT</artifact>
-                    </testPlanLibraries>
+                    </testPlanLibraries> -->
                 </configuration>
             </plugin>
         </plugins>

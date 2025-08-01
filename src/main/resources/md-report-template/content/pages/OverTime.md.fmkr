@@ -1,0 +1,32 @@
+<#include "../../common.ftl" />
+<style>
+table {
+    display:table;
+}
+</style>
+
+<#assign abc = '${responseTimePercentiles!"{}"}'>
+<#assign data2 = abc?eval_json>
+
+```json
+${responseTimePercentiles!"{}"}
+```
+
+<body style="font-size:14px;color:#333;">
+    <div id="page-wrapper">
+        <div class="row" style="border-color:#ddd;margin-bottom:20px;background-color:#fff;border:1px solid transparent;border-radius:1px">
+            <@reportInformation />
+        </div>
+    </div>
+</body>
+
+<#list data2.result.series as s>
+```mermaid
+    xychart-beta
+        title ${data2.result.title}
+        x-axis "Elapsed Time (granularity: 1 min)" [${s.data?map(obj -> obj[0])?join(", ")}]
+        y-axis "Average response times in ms"
+        line [${s.data?map(obj -> obj[1])?join(", ")}]
+```
+
+</#list>
